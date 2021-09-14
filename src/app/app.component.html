@@ -1,0 +1,47 @@
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th><code>ElementRef</code></th>
+      <th><code>@Attribute()</code></th>
+      <th><code>@Input()</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre><code>&lt;smart-input<br> type="text"><br>&lt;/smart-input></code></pre>
+      </td>
+      <td>
+        <smart-input-w-element-ref type="text"></smart-input-w-element-ref>
+      </td>
+      <td>
+        <smart-input-w-attribute type="text"></smart-input-w-attribute>
+      </td>
+      <td>
+        <smart-input-w-input type="text"></smart-input-w-input>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre><code>&lt;smart-input<br> [type]="'text'"><br>&lt;/smart-input></code></pre>
+      </td>
+      <td>
+        <smart-input-w-element-ref [type]="'text'"></smart-input-w-element-ref>
+      </td>
+      <td>
+        <smart-input-w-attribute [type]="'text'"></smart-input-w-attribute>
+      </td>
+      <td>
+        <smart-input-w-input [type]="'text'"></smart-input-w-input>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4">
+        <i>Have added <code>NO_ERRORS_SCHEMA</code> in <code>app.module.ts</code> so that code runs, otherwise it will give error <a href="https://angular.io/errors/NG8002" target="_blank" rel="noopener noreferrer">NG8002</a> in <code>ElementRef</code> &amp; <code>@Attribute()</code> examples.</i>
+      </td>
+    </tr>
+  </tfoot>
+</table>
